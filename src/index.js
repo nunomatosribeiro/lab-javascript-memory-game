@@ -44,7 +44,17 @@ window.addEventListener('load', (event) => {
   // Bind the click event of each element to a function
   document.querySelectorAll('.card').forEach((card) => {
     card.addEventListener('click', () => {
+
+const element = el.classList.toggle('turned', true)
+
+function checkIfPair(card1, card2) {
+if(card1 === card2){
+  return card.display.style = "blocked"
+} 
+
+}
       // TODO: write some code here
+     
       console.log(`Card clicked: ${card}`);
     });
   });
